@@ -57,3 +57,11 @@ body{
 .btn-arrow.right{
   right: 20px;
 }
+
+.item{
+  display: none;
+}
+
+.item.active{
+  display: block;
+}
