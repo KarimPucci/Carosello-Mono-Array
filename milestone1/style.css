@@ -5,13 +5,55 @@
 }
 
 body{
-  height: auto;
-  width: auto;
+  background-color: violet;
 }
 
-.images{
+.main-wrapper{
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+}
+
+.container{
+  background-color: crimson;
+  height: 60%;
+  width: 60%;
+}
+
+.slider{
+  height: 100%;
+  position: relative;
+}
+
+.slider img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-arrow{
+  background-color: rgba(0, 0, 0, .50);
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn-arrow:hover{
+  color: red;
+}
+
+.btn-arrow.left{
+  left: 20px;
+}
+
+.btn-arrow.right{
+  right: 20px;
 }
